@@ -31,7 +31,37 @@
                 <td>&nbsp;</td>
             </tr>
             <tr>
+                <td style="25px">
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Username required!" ForeColor="Red" ControlToValidate="txtUName" Display="Dynamic"></asp:RequiredFieldValidator>
+                    <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ErrorMessage="Username contains invalid character" ForeColor="Red" ControlToValidate="txtUName" Display="Dynamic"></asp:RegularExpressionValidator>
+                    <asp:Label ID="lblError" runat="server" ForeColor="Red"></asp:Label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:Label ID="Label1" runat="server" Text="Username: "></asp:Label>
+                    <asp:TextBox ID="txtUName" runat="server"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="Password required!" ForeColor="Red" ControlToValidate="txtPWord" Display="Dynamic"></asp:RequiredFieldValidator>
+                    <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ErrorMessage="Password contains invalid character" ForeColor="Red" ControlToValidate="txtPWord" Display="Dynamic"></asp:RegularExpressionValidator>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:Label ID="Label2" runat="server" Text="Password: "></asp:Label>
+                    <asp:TextBox ID="txtPWord" runat="server"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
                 <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:Button ID="cmdInsert" runat="server" OnClick="cmdInsert_Click" Text="Insert" />
+                </td>
             </tr>
         </table>
     
