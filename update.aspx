@@ -9,6 +9,9 @@
         .auto-style1 {
             width: 100%;text-align:center;
         }
+        .auto-style2 {
+            height: 40px;
+        }
     </style>
 </head>
 <body style="font-family: Arial, Helvetica, sans-serif">
@@ -31,7 +34,21 @@
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td>&nbsp;</td>
+                <td class="auto-style2">Username:
+                    <asp:TextBox ID="txtUName" runat="server"></asp:TextBox>
+                    <asp:Label ID="lblErrUName" runat="server" ForeColor="Red"></asp:Label>
+                </td>
+            </tr>
+            <tr>
+                <td>Password:
+                    <asp:TextBox ID="txtPWord" runat="server"></asp:TextBox>
+                    <asp:Label ID="lblErrPWord" runat="server" ForeColor="Red"></asp:Label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:Button ID="cmdUpdate" runat="server" OnClick="cmdUpdate_Click" Text="Update" />
+                </td>
             </tr>
         </table>
     

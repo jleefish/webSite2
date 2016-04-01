@@ -31,7 +31,29 @@
                 <td>&nbsp;</td>
             </tr>
             <tr>
+                <td>Are you sure you want to delete this record?</td>
+            </tr>
+            <tr>
                 <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>Username:&nbsp;<%=uName %></td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>Password:&nbsp;<%=pWord %></td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:Button ID="cmdYes" runat="server" Text="Yes" OnClick="cmdYes_Click" />
+&nbsp;&nbsp;
+                    <asp:Button ID="cmdNo" runat="server" Text="No" OnClick="cmdNo_Click" />
+                </td>
             </tr>
         </table>
     
